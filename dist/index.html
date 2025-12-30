@@ -6,34 +6,48 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>NearAura | The Orchard London</title>
     <style>
-        .gold-glow { text-shadow: 0 0 15px rgba(245, 158, 11, 0.5); }
-        .aura-border { border: 1px solid rgba(34, 211, 238, 0.2); }
+        .gold-glow { text-shadow: 0 0 20px rgba(245, 158, 11, 0.6); }
+        .aura-border { border: 1px solid rgba(34, 211, 238, 0.3); }
+        .logic-gate { letter-spacing: 1.2em; }
     </style>
 </head>
 <body class="bg-[#0B0D11] text-white font-sans selection:bg-cyan-500">
+
     <header class="p-8 flex justify-between items-center max-w-7xl mx-auto">
-        <div class="flex items-center space-x-3">
-            <div class="w-10 h-10 bg-gradient-to-tr from-orange-500 to-yellow-400 rounded-full aura-border"></div>
-            <span class="text-3xl font-black tracking-tighter italic gold-glow">NEARAURA</span>
+        <div class="flex items-center space-x-4">
+            <div class="w-12 h-12 bg-gradient-to-tr from-orange-600 via-orange-400 to-yellow-300 rounded-full aura-border shadow-[0_0_20px_rgba(245,158,11,0.3)]"></div>
+            <span class="text-4xl font-black tracking-tighter italic gold-glow uppercase">NEARAURA</span>
         </div>
-        <nav class="hidden lg:flex space-x-12 text-[10px] uppercase tracking-[0.3em] font-bold opacity-70">
-            <a href="orchard.html" class="hover:text-orange-500">The Orchard</a>
-            <a href="pricing.html" class="hover:text-orange-500">Pricing</a>
-            <a href="director.html" class="hover:text-orange-500">Director's Say</a>
-            <a href="faq.html" class="hover:text-orange-500">FAQ</a>
+        <nav class="hidden lg:flex space-x-12 text-[10px] uppercase tracking-[0.4em] font-bold opacity-80">
+            <a href="orchard.html" class="hover:text-orange-500 transition-all">The Orchard</a>
+            <a href="pricing.html" class="hover:text-orange-500 transition-all">Pricing</a>
+            <a href="director.html" class="hover:text-orange-500 transition-all">Director's Say</a>
+            <a href="faq.html" class="hover:text-orange-500 transition-all">FAQ</a>
         </nav>
-        <a href="waitlist.html" class="text-[10px] font-black uppercase tracking-widest border-b-2 border-cyan-500 pb-1">Join London</a>
+        <a href="waitlist.html" class="text-[10px] font-black uppercase tracking-widest border-b-2 border-cyan-500 pb-1 hover:text-cyan-400 transition">Join London</a>
     </header>
 
-    <main class="flex flex-col items-center justify-center min-h-[60vh] text-center px-6">
-        <h2 class="text-xs text-cyan-400 tracking-[0.8em] uppercase mb-6 font-bold">The Sovereign Garden</h2>
-        <h1 class="text-7xl md:text-9xl font-black italic uppercase mb-8 tracking-tighter">THE <span class="text-orange-500">ORCHARD</span></h1>
-        <p class="max-w-2xl text-lg opacity-60 italic">A high-density human ecosystem built for London.</p>
+    <main class="flex flex-col items-center justify-center min-h-[75vh] text-center px-6 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-orange-500/10 via-transparent to-transparent"></div>
+        
+        <h2 class="text-xs text-cyan-400 tracking-[1em] uppercase mb-8 font-black">The Sovereign Garden</h2>
+        <h1 class="text-8xl md:text-[12rem] font-black italic uppercase leading-none mb-8 tracking-tighter">
+            THE <span class="text-orange-500 gold-glow">ORCHARD</span>
+        </h1>
+        <p class="max-w-2xl text-xl md:text-2xl opacity-70 leading-relaxed font-light italic">
+            High-density human ecosystem. <br>
+            Protected by the <span class="text-white font-bold">48-Hour Vault</span>. Built for London.
+        </p>
     </main>
 
-    <footer class="mt-20 py-20 border-t border-white/5 text-center">
-        <div class="text-[12px] font-bold tracking-[1.5em] text-white/30 uppercase mb-4">JV JM PM LA LH YM VM</div>
-        <p class="text-[10px] text-gray-600 uppercase tracking-[0.4em]">© 2025 NEARAURA LONDON. ALL RIGHTS RESERVED.</p>
+    <footer class="mt-20 py-32 border-t border-white/5 text-center bg-black/40">
+        <div class="mb-16">
+            <div class="text-[14px] font-bold tracking-[1.8em] text-white/20 uppercase mb-6 logic-gate ml-[1.8em]">JV JM PM LA LH YM VM</div>
+            <div class="h-[1px] w-48 bg-gradient-to-r from-transparent via-orange-500/50 to-transparent mx-auto"></div>
+        </div>
+        <p class="text-[11px] text-gray-500 uppercase tracking-[0.5em] mb-3 font-bold">© 2025 NEARAURA LONDON. ALL RIGHTS RESERVED.</p>
+        <p class="text-[9px] text-gray-700 uppercase tracking-[0.3em]">PROPRIETARY SOVEREIGN ENGINE | FAMILY-FIRST INTEGRITY</p>
     </footer>
+
 </body>
 </html>
