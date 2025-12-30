@@ -8,49 +8,26 @@ setGlobalOptions({ region: "us-central1" });
 
 const DIRECTORS = ['JV', 'JM', 'PM', 'LA', 'LH', 'YM', 'VM'];
 
-exports.onUserCreated = onDocumentCreated("users/{userId}", (event) => {
+// LONDON EXCLUSIVE LAUNCH: Track spots and enforce region
+exports.onUserCreated = onDocumentCreated("users/{userId}", async (event) => {
     const snapshot = event.data;
     if (!snapshot) return null;
-    return snapshot.ref.set({
-        auraBalance: 100,
-        status: "active",
-        createdAt: admin.firestore.FieldValue.serverTimestamp(),
-        lastIntentUpdate: admin.firestore.FieldValue.serverTimestamp()
-    }, { merge: true });
-});
 
-exports.updateUserIntent = onCall(async (request) => {
-    if (!request.auth) throw new HttpsError('unauthenticated', 'The Orchard requires entry.');
-
-    const { newIntent, initials } = request.data;
-    const uid = request.auth.uid;
-    const userRef = admin.firestore().collection('users').doc(uid);
-
-    return admin.firestore().runTransaction(async (t) => {
-        const doc = await t.get(userRef);
-        const data = doc.data();
-        const now = admin.firestore.Timestamp.now();
-        const isDirector = DIRECTORS.includes(initials);
-
-        if (!isDirector && data.lastIntentUpdate) {
-            const diff = (now.toDate() - data.lastIntentUpdate.toDate()) / (1000 * 60 * 60);
-            if (diff < 48) throw new HttpsError('failed-precondition', 'Vault is locked for 48H.');
-        }
-
-        const hasSerious = newIntent.includes('Pineapple');
-        const hasCasual = newIntent.includes('Banana') || newIntent.includes('Peach');
-        if (hasSerious && hasCasual) throw new HttpsError('invalid-argument', 'Integrity Violation.');
-
-        t.update(userRef, { 
-            intents: newIntent, 
-            lastIntentUpdate: now, 
-            isSovereign: isDirector 
+    const statsRef = admin.firestore().collection('stats').doc('launch');
+    
+    return admin.firestore().runTransaction(async (transaction) => {
+        const statsDoc = await transaction.get(statsRef);
+        const currentSpots = statsDoc.exists ? statsDoc.data().remainingSpots : 500;
+        
+        transaction.update(statsRef, { 
+            remainingSpots: Math.max(0, currentSpots - 1),
+            lastJoined: admin.firestore.FieldValue.serverTimestamp()
         });
-        return { success: true, isDirector };
-    });
-});
 
-exports.getLaunchStats = onCall(async (request) => {
-    const stats = await admin.firestore().collection('stats').doc('launch').get();
-    return stats.data() || { remainingSpots: 500 };
+        return transaction.set(snapshot.ref, {
+            region: "London", // Phase 1 Lock
+            isSovereign: DIRECTORS.includes(snapshot.id),
+            vaultLockedUntil: admin.firestore.Timestamp.fromDate(new Date(Date.now() + 48 * 60 * 60 * 1000))
+        }, { merge: true });
+    });
 });
