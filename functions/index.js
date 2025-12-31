@@ -8,16 +8,26 @@ exports.syncIntentCommitment = functions.firestore
     .onUpdate(async (change, context) => {
         const newData = change.after.data();
         const previousData = change.before.data();
+        const userId = context.params.userId;
+
+        // Detect change in the core Intent Fruit
         if (newData.intent_fruit !== previousData.intent_fruit) {
             const now = admin.firestore.Timestamp.now().toMillis();
-            const lastUpdate = previousData.last_intent_timestamp ? previousData.last_intent_timestamp.toMillis() : 0;
-            if (now - lastUpdate < 48 * 60 * 60 * 1000) {
-                return db.collection('users').doc(context.params.userId).update({
+            const lastUpdate = previousData.last_intent_timestamp ? 
+                               previousData.last_intent_timestamp.toMillis() : 0;
+            const FORTY_EIGHT_HOURS = 48 * 60 * 60 * 1000;
+
+            // ENFORCE THE 48-HOUR VAULT
+            if (now - lastUpdate < FORTY_EIGHT_HOURS) {
+                console.log(`[SECURITY] User ${userId} blocked by 48H Vault.`);
+                return db.collection('users').doc(userId).update({
                     intent_fruit: previousData.intent_fruit,
-                    vault_violation_flag: true
+                    vault_violation: true
                 });
             }
-            return db.collection('users').doc(context.params.userId).update({
+
+            // Record the new commitment timestamp
+            return db.collection('users').doc(userId).update({
                 last_intent_timestamp: admin.firestore.FieldValue.serverTimestamp()
             });
         }
