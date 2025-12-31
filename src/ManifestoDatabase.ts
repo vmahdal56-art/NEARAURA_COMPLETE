@@ -1,46 +1,6 @@
-/**
- * NEAR AURA SOVEREIGN ENCYCLOPEDIA - RESTORED FROM FIREBASE LIVE
- * Release: TOTAL_SOVEREIGN_1506_MANIFESTATION (11:39 AM)
- */
-
 export const INITIALS = "JV JM PM LA PM LH YM VM";
-
-export const SOVEREIGN_DNA = {
-  sacrifice_hours: "1,400+",
-  code_rows: "1,000,000+",
-  file_count: "1,232,223,232",
-  philosophy: "Sacrifice is the fuel of Sovereignty."
-};
-
-export const HEADER_LINKS = [
-  { name: "The Orchard", path: "/orchard" },
-  { name: "The Matrix", path: "/matrix" },
-  { name: "Manifesto", path: "/manifesto" },
-  { name: "Mentality", path: "/mentality" },
-  { name: "Security", path: "/security" }
-];
-
-export const FOOTER_LINKS = [
-  { group: "Sovereignty", links: ["Our Stand", "The 8 Initials", "Jarmila Fund", "Director Say", "The DNA"] },
-  { group: "Protocol", links: ["48H Vault", "6-Fruit Legend", "Aura Radar", "Vibe Check", "Grid Logic"] },
-  { group: "Legal", links: ["Zero Tolerance", "GDPR Guard", "Exile Terms", "Privacy Soul", "Contact"] }
-];
-
-export const ORCHARD_FRUITS = [
-  { icon: "🍍", label: "Dating", color: "text-yellow-500", detail: "Serious Commitment" },
-  { icon: "🍈", label: "Hobbies.Sport", color: "text-red-600", detail: "Active Synergy" },
-  { icon: "🍊", label: "Friends", color: "text-orange-500" },
-  { icon: "🍇", label: "Groups", color: "text-purple-500" },
-  { icon: "🍌", label: "Intimacy M", color: "text-yellow-300" },
-  { icon: "🍑", label: "Intimacy F", color: "text-pink-400" },
-  { icon: "🍒", label: "Meetups", color: "text-red-500" }
-];
-
-export const SOVEREIGN_DB = {
-  home: {
-    hero: "THE END OF THE LONELY SWIPE",
-    subhero: "Beyond the Trolley. Proximity is a Contract.",
-    text: "The 1,400 Hour Stand: A Fundamental Rejection of the Dating Industrial Complex. NearAura is not a choice; it is a fundamental rejection of the current digital dating industrial complex. We have built a digital territory where connection is a Sovereign Contract, not a gamble.",
-    shield_of_jarmila: "The Shield of Jarmila: Protecting our Sisters and Daughters. NearAura is anchored by the Sovereign Eight. Our code is our law."
-  }
-};
+export const SOVEREIGN_DNA = { sacrifice_hours: "1,400+", code_rows: "1,000,000+", file_count: "1,232,223,232", philosophy: "Sacrifice is the fuel of Sovereignty." };
+export const HEADER_LINKS = [ { name: "The Orchard", path: "/orchard" }, { name: "The Matrix", path: "/matrix" }, { name: "Manifesto", path: "/manifesto" }, { name: "Mentality", path: "/mentality" }, { name: "Security", path: "/security" } ];
+export const FOOTER_LINKS = [ { group: "Sovereignty", links: ["Our Stand", "The 8 Initials", "Jarmila Fund", "Director Say", "The DNA"] }, { group: "Protocol", links: ["48H Vault", "6-Fruit Legend", "Aura Radar", "Vibe Check", "Grid Logic"] }, { group: "Legal", links: ["Zero Tolerance", "GDPR Guard", "Exile Terms", "Privacy Soul", "Contact"] } ];
+export const ORCHARD_FRUITS = [ { icon: "🍍", label: "Dating", color: "text-yellow-500" }, { icon: "🍈", label: "Hobbies.Sport", color: "text-red-600" }, { icon: "🍊", label: "Friends", color: "text-orange-500" }, { icon: "🍇", label: "Groups", color: "text-purple-500" }, { icon: "🍌", label: "Intimacy M", color: "text-yellow-300" }, { icon: "🍑", label: "Intimacy F", color: "text-pink-400" }, { icon: "🍒", label: "Meetups", color: "text-red-500" } ];
+export const SOVEREIGN_DB = { home: { hero: "THE END OF THE LONELY SWIPE", subhero: "Beyond the Trolley. Proximity is a Contract.", text: "The 1,400 Hour Stand: A Fundamental Rejection of the Dating Industrial Complex. NearAura is not a choice.", shield_of_jarmila: "The Shield of Jarmila: Protecting our Sisters and Daughters. NearAura is anchored by the Sovereign Eight." } };
