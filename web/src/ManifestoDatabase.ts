@@ -12,14 +12,13 @@ export const SOVEREIGN_DNA = {
   philosophy: "Sacrifice is the fuel of Sovereignty."
 };
 
-// Corrected Fruit Grid Logic for Homepage
 export const ORCHARD_FRUITS = [
   { icon: "🍍", label: "Dating", color: "text-yellow-500", detail: "Serious Commitment" },
-  { icon: "🍈", label: "Hobbies & Sports", color: "text-red-600", detail: "Active Synergy" },
+  { icon: "🍈", label: "Hobbies.Sport", color: "text-red-600", detail: "Active Synergy" },
   { icon: "🍊", label: "Friends", color: "text-orange-500", detail: "Social Circle" },
   { icon: "🍇", label: "Groups", color: "text-purple-500", detail: "Collective Vibe" },
   { icon: "🍌", label: "Intimacy M", color: "text-yellow-300", detail: "Male Perspective" },
-  { icon: "��", label: "Intimacy F", color: "text-pink-400", detail: "Female Perspective" },
+  { icon: "🍑", label: "Intimacy F", color: "text-pink-400", detail: "Female Perspective" },
   { icon: "🍒", label: "Meetups", color: "text-red-500", detail: "Instant Proximity" }
 ];
 
@@ -33,11 +32,3 @@ export const SOVEREIGN_DB = {
     text: "Intent EOF: On NearAura, your intent is not a suggestion—it is a commitment. Once you plant your fruit, the system locks it for 48 hours. This ends the swiping culture and protects our users from the Digital Trolley. Your signal is your bond."
   }
 };
-
-export const PRICING_ROWS = [
-  { label: "Aura Radar Range", basic: "100m", elite: "500m", mega: "Sovereign" },
-  { label: "Intent Lock Duration", basic: "48H", elite: "48H", mega: "Instant Sync" },
-  { label: "Visibility Multiplier", basic: "1x", elite: "10x", mega: "40x MAX" },
-  { label: "Hardware Exile Shield", basic: "✖", elite: "✔", mega: "✔" },
-  { label: "Jarmila Legacy Fund", basic: "10%", elite: "10%", mega: "10%" }
-];
