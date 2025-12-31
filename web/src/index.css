@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body { @apply bg-[#020405] text-white; font-family: 'Inter', sans-serif; }
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #22D3EE 0%, #A855F7 50%, #F97316 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

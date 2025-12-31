@@ -1,0 +1,16 @@
+# Build & Binary Junk (THE CULPRITS)
+**/build/
+**/.gradle/
+**/fresh_gradle_home/
+**/caches/
+**/native/
+*.jar
+*.apk
+*.zip
+node_modules/
+
+# IDE & Hidden files
+.firebase/
+.idx/
+.vscode/
+.DS_Store
