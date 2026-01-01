@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <View
+        android:id="@+id/radarPulse"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/radar_pulse_circle" />
+
+    <TextView
+        android:id="@+id/radarStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SCANNING NEARWORLD < 500M"
+        android:textColor="#22D3EE"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:letterSpacing="0.2"
+        android:textSize="14sp" />
+
+    <GridLayout
+        android:id="@+id/auraGrid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp"
+        android:columnCount="2"
+        android:rowCount="4"
+        android:padding="16dp" />
+
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JV JM PM LA PM LH YM VM"
+        android:textColor="#D4AF37"
+        android:alpha="0.3"
+        android:letterSpacing="0.5"
+        android:textSize="10sp" />
+
+</RelativeLayout>

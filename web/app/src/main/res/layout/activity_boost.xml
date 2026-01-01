@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MEGA BOOST"
+        android:textColor="#D4AF37"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="40X VISIBILITY | 1790 CZK"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10% goes to Cancer Research & Fighting Addiction"
+        android:textColor="#555555"
+        android:textSize="10sp"
+        android:layout_marginTop="20dp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/btnActivateBoost"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:text="ACTIVATE ORACLE POWER"
+        android:backgroundTint="#D4AF37"
+        android:textColor="#000000" />
+
+</LinearLayout>

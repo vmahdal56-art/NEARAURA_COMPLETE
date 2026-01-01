@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SELECT YOUR INTENT"
+        android:textColor="#D4AF37"
+        android:textStyle="bold"
+        android:letterSpacing="0.2"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Locked for 48 hours. Choose with integrity."
+        android:textColor="#555555"
+        android:layout_gravity="center"
+        android:textSize="12sp"
+        android:layout_marginBottom="40dp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false">
+
+        <Button
+            android:id="@+id/btnPineapple"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:text="🍍\nSERIOUS"
+            android:backgroundTint="#1A1A1A"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnOrange"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:text="🍊\nFRIENDS"
+            android:backgroundTint="#1A1A1A"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnBanana"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:text="🍌\nCASUAL"
+            android:backgroundTint="#1A1A1A"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnCherry"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:text="🍒\nSPONTANEOUS"
+            android:backgroundTint="#1A1A1A"
+            android:textColor="#FFFFFF" />
+    </GridLayout>
+
+</LinearLayout>
