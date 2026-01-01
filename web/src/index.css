@@ -2,27 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --gold: #D4AF37;
-  --fortress-gray: #1a1a1a;
+@layer base {
+  body { @apply bg-[#020405] text-white; font-family: 'Inter', sans-serif; }
 }
 
-body {
-  background-color: black;
-  color: white;
-  font-family: 'Inter', sans-serif;
-  overflow-x: hidden;
-}
-
-.aura-gradient {
-  background: linear-gradient(180deg, #22D3EE 0%, #A855F7 50%, #F97316 100%);
+.hero-gradient {
+  background: linear-gradient(135deg, #22D3EE 0%, #A855F7 50%, #F97316 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.initials-shield {
-  letter-spacing: 1.8em;
-  color: var(--gold);
-  opacity: 0.5;
-  font-weight: 900;
 }
