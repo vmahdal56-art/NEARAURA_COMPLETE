@@ -1,19 +1,19 @@
-export const manifestoContent = {
-    // STRANA 1: THE ORCHARD
-    orchard: {
-      title: "THE ORCHARD: BEYOND THE TROLLEY",
-      text: "Putting a Pineapple in your trolley is a gamble. Getting it in the Orchard is a guarantee. We end the era of lonely swiping. NearAura is not a marketplace; it is a sanctuary of high-intent souls."
-    },
-    
-    // STRANA 2: HARDWARE EXILE (Nulová tolerance)
-    security: {
-      title: "THE DAUGHTER PROTOCOL: HARDWARE EXILE",
-      text: "One Deception. Zero Warnings. Permanent Hardware Exile. We protect our sisters and daughters by purging the Device ID (HWID) of every verified scammer. If you lie to the Aura, your device will never speak to our network again."
-    },
+export const GENESIS_POINTS = [
+    { id: "01", t: "100m Radar Proximity", h: "Truth Over Distance", d: "NearAura rejects digital pen-pals. Our 100m Radar is a filter of reality. If you are not physically present, your aura does not exist in the Orchard. We eliminate ghosting and fake profiles at the source. This is the end of the bedroom swiper era. You must step into the world to be seen." },
+    { id: "02", t: "The 6-Fruit Oath", h: "Locked Intent Protocol", d: "Your word is your bond. You select your fruit (🍍, 🍌, 🍑, 🍓, 🍒, 🍏) and your intent is locked for 48 hours. No shifting, no hiding. Integrity is not an option; it is the default state of a Sovereign user. One fruit, one mission, absolute clarity for all within your radius." },
+    { id: "03", t: "Soul Score Algorithm", h: "The Math of Integrity", d: "Soul Score is not popularity; it is weight of truth. It tracks your ability to keep oaths, your presence in zones, and your behavior towards sisters. Serpent frequencies are detected in real-time. Those who lie to the system find their score—and their access—plummeting to zero." },
+    { id: "04", t: "Hardware Exile Protocol", h: "Permanent Digital Death", d: "A standard ban is a joke. We ban the Device ID. If you violate the integrity of the Orchard or harm the safety of our sisters, your hardware is permanently blacklisted. No new emails, no VPNs, no second chances. You are gone from our territory forever." },
+    { id: "05", t: "Jarmila Heart-Cut (10%)", h: "Economy of Mercy", d: "Every interaction in NearAura carries Jarmila's promise. 10% of all platform fees flows directly into a transparent foundation for victims of digital violence. We build walls to protect, not just to profit. We transform digital intent into real-world protection for the vulnerable." },
+    { id: "06", t: "No Swiping Monopoly", h: "Breaking the Dopamine Loop", d: "Swiping is a mechanism designed for cattle in a meat market. NearAura forbids it. Choice in the Orchard is conscious, slow, and deep. You don't browse an infinite catalog; you interact with the physical reality around you. Real faces, real time, real proximity." },
+    { id: "07", t: "Identity Sync Biometrics", h: "The Soul Face", d: "Your identity is anchored to biometric reality. Fake photos and AI-generated faces cannot pass the Aura scan. We ensure that the person you see on the radar is the actual person you will meet. Verification is constant, ensuring the Orchard remains a sanctuary of truth." },
+    { id: "08", t: "London Zonal Matrix", h: "Strategic Territory Control", d: "NearAura is not everywhere. We control zones. London is our first stronghold. Each zone has its own heatmap of integrity where Sovereigns gather safely. We don't expand into chaos; we create islands of order that eventually connect." },
   
-    // STRANA 3: DIRECTOR'S SAY (Vaše vize)
-    director: {
-      title: "DIRECTOR'S OATH",
-      text: "Built on the promise to Jarmila. This system exists because truth must prevail. We are not selling connections; we are guarding the frequency of human sincerity."
-    }
-  };
+  { id: "09", t: "40x Founder Multiplier", h: "Reward for Builders", d: "The economic model of NearAura rewards those who built the wall. The Sovereign Eight hold master-keys and a 40x multiplier on ecosystem participation. This is a legacy foundation. We value the architects of the new world over the tourists who just pass through." },
+  { id: "10", t: "The Daughter Protocol", h: "Shield for Sisters", d: "A specialized code built for YM and every daughter in the world. Every woman in the system is protected by an invisible shield. Predatory patterns trigger immediate alerts and isolation. We don't negotiate with integrity; we enforce it." },
+  { id: "11", t: "Zero Ads / Zero Data", h: "Private Sovereign Territory", d: "Your data is not a product. We do not sell your soul to advertisers. Our revenue comes from the integrity of interactions, not the parasitism of privacy. Your movements and intents are secured within the 100m radar and never leave the Orchard." },
+  { id: "12", t: "Intent Locking System", h: "48-Hour Reality", d: "When you choose Pineapple, the world simplifies to that intent. NearAura teaches focus in a world of distraction. You stay true to your choice for 2 days. This eliminates the 'better option' syndrome that kills modern connections." },
+  { id: "13", t: "The Golden 8 Council", h: "Family Governance", d: "NearAura does not belong to Wall Street or anonymous shareholders. It belongs to the Family. The Sovereign Eight guarantee the DNA of the system remains pure for generations. Every update is measured against the promise to Jarmila." },
+  { id: "14", t: "Anti-Ghosting Logic", h: "Social Accountability", d: "In the Orchard, silence has consequences. If you connect with a soul, the system requires integrity in communication. Ghosting is a serpent behavior and directly lowers your Soul Score. We restore the value of human attention." },
+  { id: "15", t: "Real-Time Heatmaps", h: "Visual Proof of Truth", d: "Our maps don't just show locations; they show the intensity of honest intents. See where Sovereigns gather and what fruits rule the city tonight. Navigate to where the frequency of sincerity is highest." },
+  { id: "16", t: "Genesis Legacy", h: "Built for 2026 and Beyond", d: "This is not a one-year project. It is the foundation of a new social reality. We build the system that outlives our phones and resets the rules of human connection. Truth prevails within the Orchard. Welcome to Genesis." }];
+  
