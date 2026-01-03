@@ -5,7 +5,10 @@
   "targets": {
     "huddleme": {
       "hosting": {
-        "huddleme": [
+        "staging": [
+          "huddleme-staging"
+        ],
+        "live": [
           "huddleme"
         ]
       }
